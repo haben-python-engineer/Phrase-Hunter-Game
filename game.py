@@ -30,7 +30,7 @@ class Game:
 					print(f'Oh no that was a invalid value ({error})')
 				else:
 					if self.active_phrase.check_letter(guess):
-						# Checks the current phrase that matches with the current
+						# Checks the current phrase and finds a character in the phrase that matches with the current
 						# Guess and stores the index where the match occurred
 						index_letter_occurs = [
 							index for index, letter in enumerate(self.active_phrase.phrase) if letter == guess
